@@ -15,7 +15,9 @@ const FoodCategory = () => {
       <div className="container mx-auto text-center">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold mb-12">
-          <span className="text-orange-500">Choose</span> Food Item
+          <span className="text-orange-500 font-serif font-normal size-[20px] md:text-[40px] font-family-greatVibes h-[40px]">Food Category</span>
+          <br />
+          <span className="text-orange-500">Ch</span>oose Food Item
         </h2>
 
         {/* Grid of food items */}

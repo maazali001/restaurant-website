@@ -11,7 +11,7 @@ function HomePage() {
     <>
     <section className='bg-black px-3 md:px-[135px] flex flex-col justify-evenly md:flex-row  md:items-center py-[50px]'>
         {/* Heading */}
-        <div className='text-white w-full md:w-[50%]'>
+        <div className='text-white w-full sm:mt-8 tex md:w-[50%]'>
   <h1 className='md:text-[32px] text-[24px] font-normal text-[#FF9F0D] font whitespace-nowrap'>
     Its Quick & Amusing!
   </h1>
@@ -35,7 +35,7 @@ function HomePage() {
 
         {/* Image */}
 
-        <div className='mt-[50px] md:mt-100 '>   
+        <div className='mt-[50px] mx-10 md:mt-100 '>   
             <Image 
                 src="/food.png"
                 alt='Hero Image'
@@ -100,15 +100,16 @@ function HomePage() {
           </button>
         </div>
       </div>
-      <div className="mt-[50px] md:mt-0 ">
-        <Image src={foodpic1} alt="Hero Image" className="" width={336} height={536} />
-        <div className="flex flex-col md:flex-row mt-[16px] md:mt-[0]">
-          <Image src={foodpic2} alt="Hero Image" className="mr-[16px] pt-[40px]" />
-          <Image src={foodpic3} alt="Hero Image" className="pt-[40px]" />
+      <div className="mt-[50px] md:mt-0 mx-4">
+        <Image src={foodpic1} alt="Hero Image" className="h-[360px] sm:w-[660px] rounded-md" width={660} height={330} />
+        <div className="flex flex-col md:flex-row gap-5 sm:flex-row mt-[16px] lg:mt-[45px] w-full justify-between">
+          <Image src={foodpic2} alt="Hero Image" className="elative w-full sm:w-[280px] md:w-[390px] lg:w-[300px] h-[200px] mb-4 md:mb-0" />
+          <Image src={foodpic3} alt="Hero Image" className="elative w-full sm:w-[280px] md:w-[390px] lg:w-[300px] h-[200px] mb-4 md:mb-0" />
         </div>
       </div>
     </section>
     <FoodCategory/>
+    
     </>
   )
 }

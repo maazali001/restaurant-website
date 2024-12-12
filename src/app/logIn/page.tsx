@@ -39,9 +39,9 @@ export default function SignInPage() {
                 placeholder="Enter your password"
               />
             </div>
-            <div className="flex items-center mb-4">
-              <Input type="checkbox" className="mr-2" />
-              <span>Remember me?</span>
+            <div className="flex justify-self-start gap-2 items-center mb-4">
+              <Input type="checkbox" className="" />
+              <span className="text-nowrap">Remember me?</span>
             </div>
             <button
               type="submit"
