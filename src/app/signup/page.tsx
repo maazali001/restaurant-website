@@ -2,8 +2,8 @@ import Link from "next/link";
 import Hero from "./SignupHero"
 import React from "react"
 import Image from "next/image"
-import google from "../../../public/google.png"
-import apple from "../../../public/apple.png"
+import google from "/google.png"
+import apple from "/apple.png"
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 

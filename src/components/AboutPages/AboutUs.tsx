@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { IoPlayOutline } from "react-icons/io5";
-import aboutus from "../../../public/aboutus.png"
-import about3 from "../../../public/about3.png"
-import about4 from "../../../public/about4.png"
+import aboutus from "/aboutus.png"
+import about3 from "/about3.png"
+import about4 from "/about4.png"
 
 export default function Aboutus() {
   return (

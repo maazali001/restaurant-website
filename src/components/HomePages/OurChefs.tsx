@@ -1,8 +1,8 @@
 import React from 'react'
-import chef1 from "../../../public/chef1.png";
-import chef2 from "../../../public/chef2.png";
-import chef3 from "../../../public/chef3.png";
-import chef4 from "../../../public/chef4.png";
+import chef1 from "/chef1.png";
+import chef2 from "/chef2.png";
+import chef3 from "/chef3.png";
+import chef4 from "/chef4.png";
 import Image from "next/image"
 
 const OurChefs = () => {

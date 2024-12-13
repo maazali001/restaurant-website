@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import { FaCheck } from 'react-icons/fa6'
-import foodpic1 from "../../../public/foodpic1.jpeg"
-import foodpic2 from "../../../public/foodpic2.jpeg"
-import foodpic3 from "../../../public/foodpic3.jpeg"
+import foodpic1 from "/foodpic1.jpeg"
+import foodpic2 from "/foodpic2.jpeg"
+import foodpic3 from "/foodpic3.jpeg"
 import { Button } from '../ui/button'
 
 function HomePage() {
