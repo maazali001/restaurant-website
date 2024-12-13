@@ -1,14 +1,14 @@
 import React from 'react'
-import Hero from "./Hero"
-import FAQPage from "./FAQpage"
+import FAQHero from '@/components/FAQPages/FAQHero'
+import FAQ from "@/components/FAQPages/FAQ"
 
-const FAQpage = () => {
+const FAQPage = () => {
   return (
     <div>
-      <Hero />
-      <FAQPage />
+      <FAQHero />
+      <FAQ />
     </div>
   )
 }
 
-export default FAQpage
+export default FAQPage

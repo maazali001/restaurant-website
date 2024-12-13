@@ -3,7 +3,8 @@ import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
 import { ImAppleinc } from "react-icons/im";
 import { Input } from "@/components/ui/input";
-import Hero from "./Hero"
+import Hero from "./LoginHero"
+import { Button } from "@/components/ui/button";
 
 export default function SignInPage() {
   return (
@@ -43,26 +44,26 @@ export default function SignInPage() {
               <Input type="checkbox" className="" />
               <span className="text-nowrap">Remember me?</span>
             </div>
-            <button
+            <Button
               type="submit"
               className="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 rounded"
             >
               Sign In
-            </button>
+            </Button>
             <p className="text-center mt-4">
-              <Link href="/forgot-password" className="text-yellow-500">Forgot password?</Link>
+              <Link href="#" className="text-yellow-500 hover:text-blue-500">Forgot password?</Link> or <Link href="/signup" className=" hover:text-blue-500 text-yellow-500 hover:text-bue-500">Sign Up</Link>
             </p>
           </form>
           <div className="text-center mt-8">
             <p>or</p>
-            <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
+            <Button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
             <FcGoogle className="h-6 mr-2" />
               Sign in with Google
-            </button>
-            <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
+            </Button>
+            <Button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
               <ImAppleinc className="h-6 mr-2" />
               Sign in with Apple
-            </button>
+            </Button>
           </div>
         </div>
       </section>

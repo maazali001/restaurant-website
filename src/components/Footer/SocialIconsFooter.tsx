@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Instagram, Youtube, PinIcon } from 'lucide-react'
+import Link from "next/link"
 
 export default function SocialIcons() {
   const icons = [
@@ -12,13 +13,13 @@ export default function SocialIcons() {
   return (
     <div className="flex space-x-4">
       {icons.map(({ Icon, color }, index) => (
-        <a
+        <Link
           key={index}
           href="#"
           className={`bg-white p-2 rounded ${color} hover:bg-[#FF9F0D] hover:text-white transition duration-300`}
         >
           <Icon size={16} />
-        </a>
+        </Link>
       ))}
     </div>
   )

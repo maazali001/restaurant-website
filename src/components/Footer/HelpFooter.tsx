@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HelpSection() {
     const links = ['FAQ', 'Term & Condition', 'Reporting', 'Documentation', 'Support Policy', 'Privacy']
     return (
@@ -6,9 +8,9 @@ export default function HelpSection() {
         <ul className="text-[16px] flex flex-col gap-4 leading-6">
           {links.map((link) => (
             <li key={link} className="mb-2">
-              <a href="../FAQ" className="hover:text-[#FF9F0D] transition duration-300">
+              <Link href="/FAQ" className="hover:text-[#FF9F0D] transition duration-300">
                 {link}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

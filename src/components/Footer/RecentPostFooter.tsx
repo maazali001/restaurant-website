@@ -1,4 +1,5 @@
 import Image from "next/image"
+
 export default function RecentPostsSection() {
     const posts = [
       { title: "Is fastfood good for your body?", date: "February 28, 2022", image: "/recentPost.png" },

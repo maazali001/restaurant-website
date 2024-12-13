@@ -1,14 +1,12 @@
 import React from 'react'
-import BlogPage from './BlogPage'
-import BlogDetails from './BlogDetailsPage'
-import Hero from "./Hero"
+import BlogHero from '@/components/BlogPages/BlogHero'
+import BlogPage from '@/components/BlogPages/BlogPage'
 
 const Blog = () => {
   return (
     <div>
-      <Hero />
+      <BlogHero />
       <BlogPage />
-      <BlogDetails />
     </div>
   )
 }
