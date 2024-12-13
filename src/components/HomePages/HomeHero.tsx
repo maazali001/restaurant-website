@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import { FaCheck } from 'react-icons/fa6'
-import foodpic1 from "/foodpic1.jpeg"
-import foodpic2 from "/foodpic2.jpeg"
-import foodpic3 from "/foodpic3.jpeg"
+// import foodpic1 from "/foodpic1.jpeg"
+// import foodpic2 from "/foodpic2.jpeg"
+// import foodpic3 from "/foodpic3.jpeg"
 import { Button } from '../ui/button'
 
 function HomePage() {
@@ -101,10 +101,10 @@ function HomePage() {
         </div>
       </div>
       <div className="mt-[50px] md:mt-0 mx-4">
-        <Image src={foodpic1} alt="Hero Image" className="h-[360px] sm:w-[660px] rounded-md" width={660} height={330} />
+        <Image src="/foodpic1.jpeg" alt="Hero Image" className="h-[360px] sm:w-[660px] rounded-md" width={660} height={330} />
         <div className="flex flex-col md:flex-row gap-5 sm:flex-row mt-[16px] lg:mt-[45px] w-full justify-between">
-          <Image src={foodpic2} alt="Hero Image" className="elative w-full sm:w-[280px] md:w-[390px] lg:w-[300px] h-[200px] mb-4 md:mb-0" />
-          <Image src={foodpic3} alt="Hero Image" className="elative w-full sm:w-[280px] md:w-[390px] lg:w-[300px] h-[200px] mb-4 md:mb-0" />
+          <Image src="/foodpic2.jpeg" alt="Hero Image" className="elative w-full sm:w-[280px] md:w-[390px] lg:w-[300px] h-[200px] mb-4 md:mb-0" />
+          <Image src="/foodpic3.jpeg" alt="Hero Image" className="elative w-full sm:w-[280px] md:w-[390px] lg:w-[300px] h-[200px] mb-4 md:mb-0" />
         </div>
       </div>
     </section> 

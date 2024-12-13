@@ -1,8 +1,8 @@
 import React from 'react'
-import chef1 from "/chef1.png";
-import chef2 from "/chef2.png";
-import chef3 from "/chef3.png";
-import chef4 from "/chef4.png";
+// import chef1 from "/chef1.png";
+// import chef2 from "/chef2.png";
+// import chef3 from "/chef3.png";
+// import chef4 from "/chef4.png";
 import Image from "next/image"
 
 const OurChefs = () => {
@@ -19,10 +19,10 @@ const OurChefs = () => {
         </h1>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-[20px] mt-[50px]">
-          <Image src={chef1} alt=""  width={100} height={100} className="w-[200px] md:w-[305px] md:h-[280px] cursor-pointer"/>
-          <Image src={chef2} alt=""  width={100} height={100} className="w-[200px] md:w-[280px] md:h-[280px] cursor-pointer" />
-          <Image src={chef3} alt=""  width={100} height={100} className="w-[200px] md:w-[280px] md:h-[280px] cursor-pointer" />
-          <Image src={chef4} alt=""  width={100} height={100} className="w-[200px] md:w-[280px] md:h-[280px] cursor-pointer" />
+          <Image src="/chef1.png" alt=""  width={100} height={100} className="w-[200px] md:w-[305px] md:h-[280px] cursor-pointer"/>
+          <Image src="/chef2.png" alt=""  width={100} height={100} className="w-[200px] md:w-[280px] md:h-[280px] cursor-pointer" />
+          <Image src="/chef3.png" alt=""  width={100} height={100} className="w-[200px] md:w-[280px] md:h-[280px] cursor-pointer" />
+          <Image src="/chef4.png" alt=""  width={100} height={100} className="w-[200px] md:w-[280px] md:h-[280px] cursor-pointer" />
         </div>
       </section>
     </div>
