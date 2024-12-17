@@ -11,12 +11,12 @@ export default function SocialIcons() {
   ]
 
   return (
-    <div className="flex space-x-4">
+    <div className="flex justify-center space-x-2 md:space-x-4">
       {icons.map(({ Icon, color }, index) => (
         <Link
           key={index}
           href="#"
-          className={`bg-white p-2 rounded ${color} hover:bg-[#FF9F0D] hover:text-white transition duration-300`}
+          className={`bg-white p-1.5 md:p-2 rounded ${color} hover:bg-[#FF9F0D] hover:text-white transition duration-300`}
         >
           <Icon size={16} />
         </Link>

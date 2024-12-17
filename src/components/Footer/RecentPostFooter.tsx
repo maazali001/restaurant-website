@@ -8,19 +8,23 @@ export default function RecentPostsSection() {
     ]
   
     return (
-      <div className="w-[273.83px]">
-        <h3 className="text-xl font-bold mb-8">Recent Post</h3>
+      <div className="w-full">
+        <h3 className="text-xl font-bold mb-4 md:mb-8">Recent Post</h3>
         {posts.map((post, index) => (
-          <div key={index} className="flex  items-center mb-4">
-            <Image src={post.image} alt="" width={16} height={16} className="w-16 h-16 object-cover mr-4" />
+          <div key={index} className="flex items-center mb-3 md:mb-4">
+            <Image 
+              src={post.image} 
+              alt={post.title} 
+              width={64} 
+              height={64} 
+              className="w-12 h-12 md:w-16 md:h-16 object-cover mr-3 md:mr-4" 
+            />
             <div>
-              <h4 className="font-semibold mb-1">{post.title}</h4>
-              <p className="text-sm text-gray-400">{post.date}</p>
+              <h4 className="font-semibold text-sm md:text-base mb-1">{post.title}</h4>
+              <p className="text-xs md:text-sm text-gray-400">{post.date}</p>
             </div>
           </div>
         ))}
       </div>
     )
   }
-  
-  
