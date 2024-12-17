@@ -11,6 +11,7 @@ const Home = () => {
       <HomePage />
       <FoodCategory />
       <OurChefs />
+      {/* <WhyChouseUs /> */}
       {/* <ChefGrid /> */}
     </div>
   )
