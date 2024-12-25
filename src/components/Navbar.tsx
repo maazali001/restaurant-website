@@ -75,7 +75,7 @@ export default function Navbar() {
             <Link href="/signup" className="text-white hover:text-[#FF9F0D] transition-colors" aria-label="User Profile">
               <User size={24} />
             </Link>
-            <Link href="#" className="text-white hover:text-[#FF9F0D] transition-colors" aria-label="Shopping Cart">
+            <Link href="/cart" className="text-white hover:text-[#FF9F0D] transition-colors" aria-label="Shopping Cart">
               <ShoppingCart size={24} />
             </Link>
           </div>
@@ -89,7 +89,7 @@ export default function Navbar() {
           <Link href="/signup" className="text-white hover:text-[#FF9F0D] transition-colors" aria-label="User Profile">
             <User size={24} />
           </Link>
-          <Link href="#" className="text-white hover:text-[#FF9F0D] transition-colors" aria-label="Shopping Cart">
+          <Link href="/cart" className="text-white hover:text-[#FF9F0D] transition-colors" aria-label="Shopping Cart">
             <ShoppingCart size={24} />
           </Link>
         </div>

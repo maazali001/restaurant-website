@@ -1,115 +1,83 @@
-import React from 'react'
-import Image from 'next/image'
-import { FaCheck } from 'react-icons/fa6'
-// import foodpic1 from "/foodpic1.jpeg"
-// import foodpic2 from "/foodpic2.jpeg"
-// import foodpic3 from "/foodpic3.jpeg"
-import { Button } from '../ui/button'
+import React from 'react';
+import Image from 'next/image';
+import { Inter } from 'next/font/google';
+import { FaFacebookF, FaTwitter, FaPinterestP } from "react-icons/fa";
+import { Great_Vibes } from 'next/font/google';
+import { Button } from '../ui/button';
 
-function HomePage() {
+const VibeFont = Great_Vibes({ subsets: ['latin'], weight: ['400'] });
+const InterFont = Inter({ subsets: ['latin'] });
+
+const HomePage = () => {
   return (
-    <>
-    <section className='bg-black px-3 md:px-[135px] flex flex-col justify-evenly md:flex-row  md:items-center py-[50px]'>
-        {/* Heading */}
-        <div className='text-white w-full sm:mt-8 tex md:w-[50%]'>
-  <h1 className='md:text-[32px] text-[24px] font-normal text-[#FF9F0D] font whitespace-nowrap'>
-    Its Quick & Amusing!
-  </h1>
-
-  <h1 className='text-[25px] md:text-[50px] font-bold whitespace-nowrap md:whitespace-normal'>
-
-    <span className='text-[#FF9F0D]'>Th</span>e Art of speed food Quality
-  </h1>
-
-  <p className='text-[10px] md:text-[16px] font-normal'>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius sed pharetra dictum neque massa congue
-  </p>
-
-  <div className='flex flex-col md:flex-row items-center md:items-start'>
-
-  <Button className='bg-[#FF9F0D] text-white w-[100px] h-[30px] md:w-[190px] md:h-[60px] rounded-[40px] mt-[32px] hover:bg-yellow-800'>
-    See More
-  </Button>
-  </div>
-</div>
-
-        {/* Image */}
-
-        <div className='mt-[50px] mx-10 md:mt-100 '>   
-            <Image 
-                src="/food.png"
-                alt='Hero Image'
-                width={700}
-                height={500}
-                className=''
-            />
-
+    <div className='bg-black min-h-screen w-full'>
+      {/* Header Section */}
+      <div className='relative w-full min-h-screen lg:h-[600px]'>
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image 
+            src="/home-bg.png" 
+            alt="Home Background" 
+            fill 
+            priority 
+            className="object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent" />
         </div>
-    </section>
-        <section className="bg-black px-3 md:px-[135px] flex flex-col justify-evenly md:flex-row  md:items-center py-[50px]">
-      
+        
+        {/* Main Content Container */}
+        <div className='relative h-full max-w-[1440px] mx-auto'>
+          <div className='flex flex-col lg:flex-row h-full'>
+            
+            {/* Social Media Sidebar */}
+            <div className='flex lg:flex-col items-center space-x-6 lg:space-x-0 lg:space-y-6 px-4 lg:px-12 py-8 lg:py-0 lg:mt-40'>
+              <div className='hidden lg:block w-px h-20 bg-white'></div>
+              <FaTwitter className='text-[#FF9F0D] hover:text-white transition-colors w-5 h-5 cursor-pointer' />
+              <FaFacebookF className='text-white hover:text-[#FF9F0D] transition-colors w-5 h-5 cursor-pointer' />
+              <FaPinterestP className='text-white hover:text-[#FF9F0D] transition-colors w-5 h-5 cursor-pointer' />
+              <div className='hidden lg:block w-px h-20 bg-white'></div>
+            </div>
+            
+            {/* Content Area */}
+            <div className='flex-1 flex flex-col lg:flex-row items-center lg:items-start lg:justify-between px-4 lg:px-0'>
+              {/* Text Content */}
+              <div className='lg:mt-40 max-w-xl'>
+                <p className={`${VibeFont.className} text-3xl sm:text-4xl text-[#FF9F0D] mb-4`}>
+                  Its Quick & Amusing!
+                </p>
+                <h1 className='font-bold text-4xl sm:text-5xl lg:text-7xl text-white mb-6 leading-tight'>
+                  <span className='text-[#FF9F0D]'>Th</span>e Art of speed
+                  <br />food Quality
+                </h1>
+                <p className='text-gray-300 text-lg mb-8 max-w-md'>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <br />Varius sed pharetra dictum neque massa congue
+                </p>
+                <Button className={`${InterFont.className} px-8 py-3 bg-[#FF9F0D] text-white rounded-full 
+                  hover:bg-[#ff8c00] transition-colors duration-300`}>
+                  See Menu
+                </Button>
+              </div>
+              
+              {/* Hero Image Section */}
+              <div className='relative  mt-12 lg:mt-6 w-full max-w-2xl'>
+                <div className='relative w-full pt-[100%] '>
+                  {/* Main Dish Image */}
+                  <Image 
+                    src='/food.png' 
+                    alt='Featured Food'
+                    fill
+                    className='object-contain'
+                  />
+                  </div>
+                </div>
 
-      {/* Image */}
-
-
-
-
-      {/* Heading */}
-      <div className="text-white w-full md:w-[50%]">
-        <h1 className="md:text-[32px] text-[24px] font-normal text-[#FF9F0D] font whitespace-nowrap font-greatVibes">
-          About us
-        </h1>
-
-        <h1 className="text-[20px] md:text-[50px] font-bold whitespace-nowrap md:whitespace-normal">
-          <span className="text-[#FF9F0D]">We</span> Create the best foody
-          product
-        </h1>
-
-        <p className="text-[10px] md:text-[16px] font-normal">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam
-          pellentesque bibendum non dui volutpat fringilla bibendum. Urna, elit
-          augue urna, vitae feugiat pretium donec id elementum. Ultrices mattis
-          sed vitae mus risus. Lacus nisi, et ac dapibus sit eu velit in
-          consequat.
-        </p>
-
-        <ul>
-          <li className="text-[10px] md:text-[16px] font-normal mt-10 flex">
-            <span className="mr-[10px]">
-              <FaCheck />
-            </span>{" "}
-            Lacus nisi, et ac dapibus sit eu velit in consequat.
-          </li>
-          <li className="text-[10px] md:text-[16px] font-normal mt-10 flex">
-            <span className="mr-[10px]">
-              <FaCheck />
-            </span>{" "}
-            Quisque diam pellentesque bibendum non dui volutpat fringilla{" "}
-          </li>
-          <li className="text-[10px] md:text-[16px] font-normal mt-10 flex">
-            <span className="mr-[10px]">
-              <FaCheck />
-            </span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </li>
-        </ul>
-
-        <div className="flex flex-col md:flex-row items-center md:items-start">
-          <Button className="bg-[#FF9F0D] text-white w-[100px] h-[30px] md:w-[190px] md:h-[60px] rounded-[40px] mt-[32px] hover:bg-yellow-800">
-            See More
-          </Button>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="mt-[50px] md:mt-0 mx-4">
-        <Image src="/foodpic1.jpeg" alt="Hero Image" className="h-[360px] sm:w-[660px] rounded-md" width={660} height={330} />
-        <div className="flex flex-col md:flex-row gap-5 sm:flex-row mt-[16px] lg:mt-[45px] w-full justify-between">
-          <Image src="/foodpic2.jpeg" width={400} height={200} alt="Hero Image" className="elative w-full sm:w-[280px] md:w-[390px] lg:w-[300px] h-[200px] mb-4 md:mb-0" />
-          <Image src="/foodpic3.jpeg" width={400} height={200} alt="Hero Image" className="elative w-full sm:w-[280px] md:w-[390px] lg:w-[300px] h-[200px] mb-4 md:mb-0" />
-        </div>
-      </div>
-    </section> 
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;

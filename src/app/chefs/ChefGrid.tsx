@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image"
+import Image from "next/image";
 
 const chefs = [
   { name: "Tahmina Rumi", role: "Chef", image: "/pic1.png" },
@@ -18,7 +18,9 @@ const chefs = [
 
 const ChefGrid = () => {
   return (
-    <div className="p-6 mt-20"> {/* Adding mt-20 for margin top */}
+    <div className="p-6 mt-20">
+      {" "}
+      {/* Adding mt-20 for margin top */}
       {/* Grid with responsive columns */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
         {chefs.map((chef, index) => (
@@ -35,8 +37,9 @@ const ChefGrid = () => {
               <Image
                 src={chef.image}
                 alt={chef.name}
-                width={40}
-                height={60}
+                width={60}
+                height={40}
+                priority
                 className="w-full h-full object-cover rounded-t-lg"
               />
             </div>
@@ -53,4 +56,4 @@ const ChefGrid = () => {
   );
 };
 
-export default ChefGrid;
+export default ChefGrid;

@@ -1,10 +1,9 @@
 import React from 'react'
-import Hero from "./PagesHero"
-
+import Error404 from '../404Error/page'
 const Pages = () => {
   return (
     <div>
-      <Hero />
+    <Error404 />
     </div>
   )
 }
