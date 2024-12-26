@@ -120,7 +120,7 @@ export default function Aboutus() {
             <div className="bg-white border-2 border-gray-100 rounded-xl p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
               <div className="relative w-24 h-24 mb-6">
                 <Image
-                  src="/student.png"
+                  src="/Student.png"
                   fill
                   alt="Best Chef"
                   className="object-contain"
@@ -137,7 +137,7 @@ export default function Aboutus() {
             <div className="bg-white border-2 border-gray-100 rounded-xl p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
               <div className="relative w-24 h-24 mb-6">
                 <Image
-                  src="/coffee.png"
+                  src="/Coffee.png"
                   fill
                   alt="Food Items"
                   className="object-contain"

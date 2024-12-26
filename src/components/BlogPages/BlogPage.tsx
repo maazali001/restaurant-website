@@ -91,7 +91,7 @@ const HeroPage = () => {
             <div className="bg-gray-800 p-6 md:p-8 rounded-lg text-center">
               <div className="relative w-24 h-24 md:w-32 md:h-32 mx-auto mb-6">
                 <Image
-                  src="/blog/whiteman.png"
+                  src="/Blog/whiteman.png"
                   alt="Profile"
                   fill
                   className="rounded-full object-cover"
