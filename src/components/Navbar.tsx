@@ -25,7 +25,7 @@ export default function Navbar() {
       <nav className="flex items-center justify-between relative">
         {/* Logo */}
         <Link
-          href="/"
+          href="/src/app/favicon.ico"
           className="text-[20px] sm:text-[24px] leading-[32px] font-bold text-white z-50"
         >
           Food<span className="text-[#FF9F0D]">tuck</span>
